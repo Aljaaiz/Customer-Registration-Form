@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <title>Customer Reg Form</title>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .success,
+        .error {
+            color: white;
+            padding: 7px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container" id="customer-box">
+        <h3 class="mb-2 text-center my-4">CUSTOMER'S REG FORM</h3>
+        <form id="customer-form">
+            <div class="row py-3">
+                <div class="col">
+                    <label for="firstName">First Name</label>
+                    <input type="text" placeholder="First Name" class="form-control" id="firstName">
+                </div>
+                <div class="col">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" placeholder="last Name" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="address">Address</label>
+                    <input type="text" placeholder="Address" class="form-control" id="address">
+                </div>
+                <div class="col">
+                    <label for="country">Country</label>
+                    <input type="text" placeholder="Country" class="form-control" id="country">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="state">State</label>
+                    <input type="text" placeholder="State" class="form-control" id="state">
+                </div>
+                <div class="col">
+                    <label for="phone">Phone-No</label>
+                    <input type="number" placeholder="Phone Number" class="form-control" id="phone">
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="btn-block m-3 btn-primary">
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>Phone-No</th>
+                    <th>Delete</th>
+                </tr>
+
+            </thead>
+            <tbody id="customer-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
